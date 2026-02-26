@@ -1,80 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amac - Massoterapia</title>
-    <link rel="stylesheet" href="assets/css/estilo.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Amac Massoterapia: Especialistas em técnicas de massagem para relaxamento, eliminação de dores e alívio do estresse. Agende sua sessão.">
+    <meta name="keywords"
+        content="massoterapia, massagem relaxante, alivio do estresse, massagem modeladora, reflexologia, aromaterapia">
+    <meta name="author" content="Amac Massoterapia">
+    <title>Amac - Massoterapia Premium</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons (Modern Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
+
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1>Amac<br>Massoterapia</h1>
-            <nav>
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <i class="ph ph-flower-lotus"></i>
+                <span>Amac</span>
+            </a>
+            <nav class="nav-menu">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Tratamentos</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            <a href="#contato" class="btn btn-primary d-none-mobile">Agendar Sessão</a>
         </div>
     </header>
 
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Somos especialistas em técnicas de massagem, proporcionando relaxamento, eliminação de dores e alívio do estresse.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="subtitle">Bem-estar e Cuidado</span>
+                <h1>O seu refúgio de<br>paz e relaxamento</h1>
+                <p>Descubra o poder do toque terapêutico para aliviar dores, reduzir o estresse e renovar as suas
+                    energias.</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary">Conheça Nossos Tratamentos</a>
+                    <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="section about-section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <span class="section-subtitle">Nossa Essência</span>
+                    <h2>Especialistas em<br>Qualidade de Vida</h2>
+                    <p>Na Amac Massoterapia, acreditamos que o corpo e a mente precisam estar em harmonia. Somos
+                        especialistas em técnicas diversas de massagem, focados em proporcionar uma experiência única de
+                        relaxamento, eliminação de dores e alívio do estresse do dia a dia.</p>
+                    <p>Nosso ambiente foi preparado cuidadosamente para que você se desconecte do mundo exterior e foque
+                        apenas no seu bem-estar.</p>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="assets/images/Instagram.png" alt="Amac Massoterapia Perfil" class="about-profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="section services-section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossos Serviços</span>
+                    <h2>Tratamentos Oferecidos</h2>
+                    <p>Escolha a terapia ideal para o seu momento de saúde e relaxamento.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-drop"></i></div>
+                        <h3>Massagem Relaxante</h3>
+                        <p>Movimentos suaves e contínuos para relaxar profundamente o corpo e a mente.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-activity"></i></div>
+                        <h3>Massagem Terapêutica</h3>
+                        <p>Focada em pontos de tensão específicos para tratamento de dores e desconfortos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-person-arms-spread"></i></div>
+                        <h3>Massagem Modeladora</h3>
+                        <p>Movimentos vigorosos para ativação da circulação e modelagem corporal.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-leaf"></i></div>
+                        <h3>Massagem Sueca</h3>
+                        <p>Terapia tradicional que melhora o fluxo sanguíneo e a flexibilidade muscular.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-fire"></i></div>
+                        <h3>Com Pedras Quentes</h3>
+                        <p>Calor terapêutico para um alívio profundo de tensões acumuladas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-steps"></i></div>
+                        <h3>Reflexologia</h3>
+                        <p>Estímulos em pontos específicos dos pés para harmonizar órgãos e sistemas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="ph ph-wind"></i></div>
+                        <h3>Aromaterapia</h3>
+                        <p>Uso de óleos essenciais que atuam tanto no nível físico quanto emocional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios Section -->
+        <section id="beneficios" class="section benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Por que escolher</span>
+                    <h2>Vantagens e Benefícios</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Redução profunda do estresse e ansiedade</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Alívio imediato da tensão muscular</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Melhora significativa na circulação sanguínea</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Aumento da flexibilidade e bem-estar</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Melhora da qualidade do sono</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Aumento da imunidade e disposição</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="section contact-section bg-light">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-subtitle">Fale Conosco</span>
+                    <h2>Agende seu Horário</h2>
+                    <p>Estamos prontos para receber você. Preencha o formulário ou entre em contato diretamente pelos
+                        nossos canais de atendimento.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ph-fill ph-whatsapp-logo"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(49)98829-2633</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-envelope-simple"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>flavianneferreiraaa@gmail.com </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-map-pin"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Rua São Paulo, 42 - Centro<br>Campos Novos (SC)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="whatsapp-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Interesse</label>
+                            <select id="assunto" name="assunto">
+                                <option value="Agendamento">Agendamento</option>
+                                <option value="Dúvida sobre tratamentos">Dúvidas sobre tratamentos</option>
+                                <option value="Outro assunto">Outro assunto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Como podemos ajudar?</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar para o WhatsApp <i
+                                class="ph-bold ph-whatsapp-logo"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Obter os valores do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // Formatar a mensagem do WhatsApp
+            // Use \n para pular linha
+            const textoMensagem = `Olá, Amac Massoterapia!\n\nMeu nome é *${nome}* (Email: ${email}).\nMeu interesse é sobre: *${assunto}*.\n\nMensagem:\n${mensagem}`;
+
+            // Codificar o texto para URL (substitui espaços por %20, etc)
+            const textoCodificado = encodeURIComponent(textoMensagem);
+
+            const numeroWhatsApp = '5549988292633';
+
+            // Criar o link do WhatsApp
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
+
+            // Abrir o WhatsApp numa nova aba
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <i class="ph ph-flower-lotus"></i>
+                    <span>Amac</span>
+                </a>
+                <p>O seu refúgio de bem-estar. Proporcionando o melhor da massoterapia para o corpo e para a mente.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Tratamentos</a></li>
+                    <li><a href="#contato">Agendamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/amac.massoterapia/" target="_blank" aria-label="Instagram"><i
+                            class="ph-fill ph-instagram-logo"></i> @amac.massoterapia</a>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section id="servicos" class="section bg-light">
-        <div class="container">
-            <h2>Serviços</h2>
-            <ul class="services-list">
-                <li>Massagem Relaxante</li>
-                <li>Massagem Terapêutica</li>
-                <li>Massagem Modeladora</li>
-                <li>Massagem Sueca</li>
-                <li>Massagem com pedras quentas</li>
-                <li>Reflexologia</li>
-                <li>Aromaterapia</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="beneficios" class="section">
-        <div class="container">
-            <h2>Vantagens e Benefícios</h2>
-            <p>Redução do estresse, alívio da tensão muscular e melhora na circulação sanguínea.</p>
-        </div>
-    </section>
-
-    <section id="contato" class="section">
-        <div class="container">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 Amac - Massoterapia | Redes Sociais: @amac.massoterapia</p>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Amac Massoterapia. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
